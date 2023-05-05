@@ -16,7 +16,7 @@
       @method('delete')
       <button class="btn btn-warning" type="submit" class="btn btn-primary">Удалить</button>
     </form>
-    <a class="btn btn-success" href="{{ route('task.update.show', $task->id) }}">Изменить</a>
+    <a class="btn btn-success" href="{{ route('task.view.update', $task->id) }}">Изменить</a>
     @endauth
   </div>
 </div>
