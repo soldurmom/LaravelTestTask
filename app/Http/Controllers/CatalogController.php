@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 class CatalogController extends Controller
 {
     public function show(Request $request){
-        $users = User::all();
+        $users = User::all()->sortBy('name');
 
         if($request->get('user_id'))
             $tasks = Task::where('user_id', $request->get('user_id'))->get();
